@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeatBond</title>
+	<meta charset="utf-8">  
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" zoom="1.0">
+  	<meta http-equiv="X-UA-compatible" content="ie=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="log.css">
+
+</head>
+<body>
+   <header>
+     
+   </header>
+    <section class="sign">
+        <div class="container create">
+            <div class="text">
+                Sign-up Form
+             </div>
+             <a href="maintain.html">
+                <img id="logo" href src="../images/logo-removebg-preview.png">
+            </a>
+            <form action="../scripts/forms/sign_up.py"  enctype="multipart/form-data"  method="post">
+               <div class="data">
+                    <label>Name</label>
+                    <input name = "name" placeholder="Name" type="text" required>
+               </div>
+               <div class="data">
+                    <label>Surname</label>
+                    <input name = "lastname" placeholder="Surname" type="text" required>
+               </div>
+               <div class="data gender">
+                  <label>Gender</label>
+                  <div class="gender-inp">
+                     <input type="radio" name="gender" value="female" required>Female
+                     <input type="radio" name="gender" value="male" required>Male
+                     <input type="radio" name="gender" value="other" required>Other
+                  </div>
+               </div>
+               <div class="data">
+                  <label>Nationality</label>
+                  <input name = "nationality"placeholder="Nationality" type="text" required>
+               </div>
+               <div class="data">
+                  <label>Date of Birth</label>
+                  <input name = "dob" placeholder="Date of birth" type="date" name ="Birth" required>
+               </div>
+               <div class="data">
+                  <label>Email</label>
+                  <input name = "email" placeholder="Email" type="text" required>
+               </div>
+	       <div class="data">
+	          <label>Profile Picture</label>
+                  <input type="file" name="profile" required>
+	       </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input name = "password" placeholder="Password" type="password" required>
+               </div>
+               <div class="data">
+                   <label>Confirm Password</label>
+                   <input id = "password_verif" placeholder="Confirm Password" type="password" required>
+                  </div>
+                  <p id = "passText" style="color: red;"></p>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button name = "submit"  type="submit">CREATE ACCOUNT</button>
+               </div>
+               <div class="signup-link">Already Have an Account? Click
+                    <a href="login.html"> here</a>
+               </div>
+            </form>
+        </div>
+    </section>
+   </body>
+   <script>
+      document.getElementById("password_verif").addEventListener("input", validate)
+      document.getElementsByName("password")[0].addEventListener("input", validate)
+      var submit = document.getElementsByName("submit")[0];
+      submit.disabled = true;
+
+      function validate() {
+      var x = document.getElementsByName("password")[0].value;
+      var y= document.getElementById("password_verif").value;
+      var output = document.getElementById("passText")
+      if(x==y){
+         submit.disabled = false;
+         output.innerHTML = "";
+
+      }
+      else{
+         submit.disabled = true;
+         output.innerHTML = "Passwords do not match"
+      }
+      }
+      </script>
+</html>
