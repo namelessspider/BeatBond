@@ -61,5 +61,6 @@ Key aspects:
 
 ## Acknowledgements  
 
-This project was developed as part of my **Databases and Web Services course at Constructor University** together with my teammates.  
+This project was developed as part of my **Databases and Web Services course at Constructor University** together with my teammates.
+
 
