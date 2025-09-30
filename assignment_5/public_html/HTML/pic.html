@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeatBond</title>
+	<meta charset="utf-8">  
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" zoom="1.0">
+  	<meta http-equiv="X-UA-compatible" content="ie=">
+    <link rel="stylesheet" type="text/css" href="log.css">
+
+</head>
+<body>
+    <div class="mprofile">
+        <h1>Messages</h1>
+        <a href="maintain.html">
+            <img id="logo" href src="../images/logo-removebg-preview.png">
+        </a>
+        <form action="../scripts/forms/picture.py" enctype="multipart/form-data" method="POST">
+            <div class="data">
+                <label>USER ID</label>
+                <input name="uid" placeholder="UserID" type="number" required>
+             </div>
+            <div class="data">
+               <label>Picture Image</label>
+               <input type="file" id="img" name="img" accept="image/*">
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit">CREATE</button>
+             </div>
+        </form>
+    </div>
+
+</body>
+</html>

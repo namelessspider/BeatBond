@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeatBond</title>
+	<meta charset="utf-8">  
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" zoom="1.0">
+  	<meta http-equiv="X-UA-compatible" content="ie=">
+    <link rel="stylesheet" type="text/css" href="log.css">
+
+</head>
+<body>
+    <div class="mprofile">
+        <h1>Musical Profile</h1>
+        <a href="maintain.html">
+            <img id="logo" src="../images/logo-removebg-preview.png" alt="Logo">
+        </a>
+        <form action="../scripts/forms/mp.py" method = "POST">
+            <div class="data">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" name="genre" placeholder="Genre" required>
+            </div>
+            <div class="data">
+                <label for="artist">Artist</label>
+                <input type="text" id="artist" name="artist" placeholder="Artist" required>
+            </div>
+            <div class="data">
+                <label for="uid">Uid</label>
+                <input type="number" id="uid" name="uid" placeholder="uid" required>
+            </div>
+            <div class="data">
+                <label for="album">Album</label>
+                <input type="text" id="album" name="album" placeholder="Album" required>
+            </div>
+            <div class="data">
+                <label for="song">Song</label>
+                <input type="text" id="song" name="song" placeholder="Song" required>
+            </div>
+            <div class="data">
+                <label for="vibe">Vibe</label>
+                <input type="text" id="vibe" name="vibe" placeholder="Vibe" required>
+            </div>
+            <div class="data">
+                <label for="releaseYear">Song release Year</label>
+                <input type="number" id="releaseYear" name="year" placeholder="Song release year" required>
+            </div>
+            <div class="data">
+                <label for="listeningTime">Listening Time</label>
+                <input type="number" id="listeningTime" name="time" placeholder="Listening Time" required>
+            </div>
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit">CREATE</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
