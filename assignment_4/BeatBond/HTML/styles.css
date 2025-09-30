@@ -1,0 +1,344 @@
+:root {
+	--primary-color: #4b0082;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial' , sans-serif;
+	--webkit-font-smoothing: antialiased;
+	background: #000;
+	color: #999;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+h1, h2, h3, h4 {
+	color: #fff;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+img {
+	width: 100%;
+}
+
+
+.showcase-top {
+	position: absolute;
+	height: 90px;
+	padding-left: 260px;
+}
+
+.showcase-top img {
+	width: 170px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	border-bottom: 8px solid #222;
+}
+
+nav {
+	float: right;
+	padding-top: 30px;
+	padding-right: 50px;
+}
+
+.btn {
+    display: inline-block;
+    background: #9640AC;
+    color: white; 
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 25px; 
+    transition: background-color 0.4s, transform 0.2s;
+    padding: 0.5rem 1rem;
+}
+
+.btn-x1 {
+    font-size: 1.2rem; 
+    padding: 1rem 1.5rem; 
+}
+
+.btn:hover {
+    background-color: #87399b; 
+    transform: scale(1.05); 
+}
+
+.search-box {
+	position: center;
+	transform: translate(-50,-50);
+	height: 60px;
+}
+
+input {
+	height: 49px;
+	width: 550px;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature .text-content {
+    text-align: left;
+    z-index: 1;
+    margin-right: 20px;
+    width: 50%; 
+}
+
+.feature .feature-image {
+    width: 300px; 
+    height: auto;
+    margin-left: auto; 
+}
+
+
+
+.music-everywhere {
+	font-size: 30px;
+	text-align: left;
+	position: relative;
+	padding: 150px 10%;
+	padding-left: 280px;
+	margin-bottom: 0;
+	background: 0 0;
+	color: #fff;
+	display: block;
+	border-bottom: 8px solid #222;	
+}
+
+.music-everywhere img {
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(+20%, -50%);
+	display: block;
+}
+
+.second {
+    margin-top: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(135, 57, 155);
+    margin-top: 30px;
+    padding: 70px 0px;
+}
+
+.ask-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set a specific height to center vertically */
+}
+
+.ask-question button {
+    background-color: #9640AC;
+    color: white;
+    height: 65px;
+    width: 250px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.ask-question button:hover {
+    background-color: #652b74;
+    color: #f2f2f2;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.page-down {
+	border-top: 40px solid #000000;
+	background-color: transparent;
+	font-size: 0.8rem;
+	margin-bottom: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 0.5rem;
+}
+
+#disclaimer {
+    background-color: #000000;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#disclaimer h1{
+  font-size: 24px;
+}
+
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+  
+  
+  body {
+    background-color: #000;
+  }
+
+
+  .ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+  
+    margin: 0 15px 30px;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;
+  }
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    overflow: hidden;
+    position: sticky;
+  }
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+  
+    overflow: hidden;
+  
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date-box {
+    font-size: 18px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+  
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+  }
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .ag-courses_item:nth-child(1n) .ag-courses-item_bg {
+    background-color: #952aff;
+  }
+  .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+    background-color: #cd3e94;
+  }
+  .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+  }
+  
+  
+  
+  @media only screen and (max-width: 979px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .ag-courses-item_title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  
+  }
+  @media only screen and (max-width: 639px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 24px;
+    }
+
+  }
