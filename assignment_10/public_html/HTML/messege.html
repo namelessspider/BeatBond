@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BeatBond</title>
+	<meta charset="utf-8">  
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" zoom="1.0">
+  	<meta http-equiv="X-UA-compatible" content="ie=">
+    <link rel="stylesheet" type="text/css" href="log.css">
+
+</head>
+<body>
+    <div class="mprofile">
+        <h1>Messages</h1>
+        <a href="maintain.html">
+            <img id="logo" src="../images/logo-removebg-preview.png" alt="Logo">
+        </a>
+        <form enctype="multipart/form-data" action="../scripts/forms/messege.py" method="POST">
+            <div class="data">
+                <label for="sender">Message Sender</label>
+                <input type="text" id="sender" name="sender" placeholder="Sender" required>
+            </div>
+            <div class="data">
+                <label for="Receiver">Message Receiver</label>
+                <input type="text" id="Receiver" name="receiver" placeholder="Receiver" required>
+            </div>
+            <div class="data">
+                <label for="messageText">Message Text</label>
+                <input type="text" id="messageText" name="messageText" placeholder="Message Text" required>
+            </div>
+            <div class="data">
+                <label for="messageImage">Message Media</label>
+                <input type="file" id="media" name="media">
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="submit">CREATE</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
