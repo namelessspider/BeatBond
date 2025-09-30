@@ -1,4 +1,4 @@
-# 🎶 BeatBond  
+# BeatBond  
 
 **BeatBond** is a web application designed to connect music enthusiasts based on their shared tastes and preferences. The platform allows users to discover new music, engage in discussions, and connect with like-minded individuals, while also integrating with popular streaming platforms for recommendations.  
 
