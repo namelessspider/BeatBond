@@ -4,13 +4,13 @@
 
 ---
 
-## 🎯 Objective  
+## Objective  
 
 The goal of BeatBond was to create an interactive platform where music becomes a social experience. By combining database-driven backend logic with external APIs (Spotify, Apple Music, YouTube), the app could generate personalized recommendations and match users with similar tastes.  
 
 ---
 
-## 🛠️ Features  
+## Features  
 
 - **User Profiles**: Store user preferences, favorite artists, and genres.  
 - **Recommendation Algorithm**: Analyze user music data to suggest tracks and connect users with similar tastes.  
@@ -20,7 +20,7 @@ The goal of BeatBond was to create an interactive platform where music becomes a
 
 ---
 
-## ⚙️ Technology Stack  
+## Technology Stack  
 
 - **Backend**: MySQL for database design and queries  
 - **Frontend**: HTML, CSS, JavaScript  
@@ -28,7 +28,7 @@ The goal of BeatBond was to create an interactive platform where music becomes a
 
 ---
 
-## 📊 Database Design  
+## Database Design  
 
 I designed and optimized the database schema to ensure efficient data storage and retrieval.  
 
@@ -39,7 +39,7 @@ Key aspects:
 
 ---
 
-## 👩‍💻 My Role  
+## My Role  
 
 - **Primary focus**: Backend development and database architecture (MySQL)  
 - Assisted with **frontend styling and JavaScript functionality** to enhance UX  
@@ -48,7 +48,7 @@ Key aspects:
 
 ---
 
-## 🚀 Challenges & Solutions  
+## Challenges & Solutions  
 
 - **Challenge**: Balancing backend performance with external API calls  
   - **Solution**: Cached frequent queries and limited API requests with smart logic.  
